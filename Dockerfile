@@ -28,3 +28,7 @@ RUN mkdir -p /var/lib/influxdb && \
 RUN cp /usr/lib/influxdb/scripts/init.sh /etc/init.d/influxdb && \
     chmod 755 /etc/init.d/influxdb
 RUN cp /usr/lib/influxdb/scripts/influxdb.service /etc/systemd/system
+
+EXPOSE 8086
+
+VOLUME /var/lib/infuxdb
