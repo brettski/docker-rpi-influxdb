@@ -32,7 +32,7 @@ RUN chown influxdb:influxdb -R /etc/influxdb && \
     chmod 755 /etc/init.d/influxdb && \
     cp /usr/lib/influxdb/scripts/influxdb.service /etc/systemd/system
 
-EXPOSE 8086 8083
+EXPOSE 8086
 
 VOLUME /var/lib/influxdb
 
